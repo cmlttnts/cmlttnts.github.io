@@ -1,0 +1,46 @@
+@use "./NavigationVars";
+
+.Navigation {
+  //Colors, Fonts, Borders
+  // border: 1px solid red;
+  //Display
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  //Diamensions
+  width: 100%;
+
+  //Position
+  position: fixed;
+  bottom: 0;
+  //Margin, Padding
+}
+
+.NavMenu {
+  //Colors, Fonts, Borders
+  //Display
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  //Diamensions
+  width: 100%;
+  //Diamensions
+  //Position
+  position: absolute;
+  top: 0;
+  //Margin, Padding
+}
+
+.Navigation .BurgerButton {
+  //Colors, Fonts, Borders
+
+  //Display
+  z-index: 2;
+  //Diamensions
+  //Position
+  //Margin, Padding
+}

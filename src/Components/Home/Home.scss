@@ -1,0 +1,19 @@
+@use "./HomeVars" as home;
+
+.Home {
+  //Colors, Fonts, Borders
+  color: white;
+  border: 1px solid red;
+  background: home.$grad;
+  background-image: linear-gradient(home.$grad, home.$grad), url("~Images/computer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //Display
+  text-align: center;
+  //Diamensions
+  width: 100vw;
+  height: 100vh;
+  //Position
+  //Margin, Padding
+}
