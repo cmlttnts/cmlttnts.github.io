@@ -1,0 +1,3 @@
+exclude_copy.txt
+/build/
+/Templates/
