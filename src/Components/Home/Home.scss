@@ -8,6 +8,7 @@
   background-image: linear-gradient(home.$grad, home.$grad), url("~Images/computer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   //Display
   text-align: center;
@@ -16,4 +17,22 @@
   height: 100vh;
   //Position
   //Margin, Padding
+}
+
+.Header {
+  margin-top: 3rem;
+}
+
+.HeaderPic {
+  //Colors, Fonts, Borders
+  background-color: rgba(218, 129, 198, 0.8);
+  border-radius: 50%;
+  //Display
+  opacity: 0.8;
+  //Diamensions
+  width: 30vw;
+  height: 40vw;
+  //Position
+  //Margin, Padding
+  //Transition, Animation
 }
