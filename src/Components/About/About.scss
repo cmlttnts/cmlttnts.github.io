@@ -6,6 +6,10 @@
   color: white;
   // background-color: rgb(241, 236, 227);
   //Display
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   //Diamensions
   width: 100vw;
   height: 100vh;

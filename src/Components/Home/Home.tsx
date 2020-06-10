@@ -1,4 +1,6 @@
 import './Home.scss';
+import navMain from 'navMain';
+import Navigation from 'Components/Navigation/Navigation';
 
 import React /* , { useState, useEffect, useContext } */ from 'react';
 import cemoMid from 'Images/cemo_cropped.png';
@@ -22,6 +24,7 @@ const Home = (/* { prop1, prop2 }: PropType */): JSX.Element => {
         <h1>Lorem, ipsum dolor.</h1>
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, impedit?</h2>
       </header>
+      <Navigation items={navMain} />
     </div>
   );
 };

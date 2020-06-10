@@ -30,13 +30,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   //Diamensions
   width: 100%;
-  //Diamensions
   //Position
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
+  transform: translateY(100%);
   //Margin, Padding
   //Transition, Animation
   transition: all 0.4s ease;
@@ -46,13 +45,13 @@
   //Colors, Fonts, Borders
 
   //Display
-  z-index: 2;
   //Diamensions
   //Position
   //Margin, Padding
 }
 
 .BurgerButton:hover + .NavMenu {
-  transform: translateY(-100%);
+  z-index: 2;
+  transform: translateY(0);
   background-color: nav.$menu-bgc;
 }

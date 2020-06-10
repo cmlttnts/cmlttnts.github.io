@@ -15,7 +15,26 @@ type PropType= {
 const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
   return (
     <div className="About" id="about">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam error architecto, harum obcaecati natus iusto voluptas hic nesciunt! Vitae consequatur, ut, odit quod mollitia explicabo rerum eligendi ipsam expedita quam cum non quasi quia dolores! Fugiat, amet praesentium aliquam officia quam ab expedita reprehenderit esse harum temporibus voluptatum mollitia qui. Iusto ipsam, fugiat ut, necessitatibus neque id culpa explicabo voluptatibus quas repudiandae aperiam fugit eligendi. Explicabo, deserunt reprehenderit ea nobis harum doloremque magni ipsa nemo qui eaque architecto autem? Dignissimos optio nobis fuga eos omnis esse ratione, reiciendis dolorem atque fugit quam ex distinctio mollitia dicta perspiciatis? Ipsam accusantium nam atque expedita aliquid quas architecto fugiat similique fugit, reprehenderit ut aut laudantium quod quia, qui cupiditate corrupti, consectetur cumque doloremque explicabo optio. Quo beatae voluptates quisquam excepturi, sed hic. Doloremque nam voluptatum fuga quibusdam, omnis iste nostrum itaque explicabo dolore non nemo rerum minus. Hic soluta doloremque officia minima quasi.
+      <div className="Skills">
+        <h2>
+          <i className="fas fa-cogs"></i>
+          Skills
+        </h2>
+      </div>
+
+      <div className="Education">
+        <h2>
+          <i className="fas fa-graduation-cap"></i>
+          Education
+        </h2>
+      </div>
+
+      <div className="Experience">
+        <h2>
+          <i className="fas fa-briefcase"></i>
+          Experience
+        </h2>
+      </div>
     </div>
   );
 };

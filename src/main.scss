@@ -9,6 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
+$primary_color: hsl(286, 72%, 45%);
+
 // ANCHOR TAG
 $pri_link_col: rgb(24, 24, 231);
 $pri_link_col_active: rgb(226, 223, 223);
@@ -40,10 +42,8 @@ a:visited {
 
 // BUTTON
 
-$def_btn_bgc: hsl(286, 72%, 45%);
-$def_btn_bgc_hover: hsl(286, 72%, 65%);
-$def_btn_shdw: 3px 3px 1px rgb(150, 148, 148);
-$def_btn_shdw_active: 1px 1px 1px black;
+$def_btn_bgc: $primary_color;
+$def_btn_bgc_hover: $primary_color;
 $def_btn_pad: 4px;
 $def_btn_rad: 4px;
 
@@ -59,13 +59,11 @@ button {
   text-align: center;
   padding: $def_btn_pad;
   border-radius: $def_btn_rad;
-  box-shadow: $def_btn_shdw;
 }
 button:hover {
   background-color: $def_btn_bgc_hover;
 }
 
 button:active {
-  box-shadow: $def_btn_shdw_active;
-  transform: translateY(1px);
+  background-color: $primary_color;
 }

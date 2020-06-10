@@ -1,7 +1,5 @@
 import React from 'react';
 import 'main.scss';
-import Navigation from 'Components/Navigation/Navigation';
-import navMain from 'navMain';
 import Home from 'Components/Home/Home';
 import About from 'Components/About/About';
 import Contact from 'Components/Contact/Contact';
@@ -14,7 +12,6 @@ const App = (): JSX.Element => {
       <About />
       <Contact />
       <Projects />
-      <Navigation items={navMain} />
     </div>
   );
 };
