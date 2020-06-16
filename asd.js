@@ -11,6 +11,8 @@ module.exports = {
   rules: {
     "react/self-closing-comp": "off",
     "spaced-comment": "off",
+    "padded-blocks":"off",
+    "arrow-parens":"off",
     "arrow-body-style":0
   },
 };

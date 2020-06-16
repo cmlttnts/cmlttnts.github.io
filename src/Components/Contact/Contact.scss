@@ -5,10 +5,33 @@
   color: white;
   background-color: rgba(2, 2, 2, 0.7);
   //Display
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   //Diamensions
   width: 100vw;
   height: 100vh;
   //Position
   //Margin, Padding
+  padding-top: 5rem;
+  //Transition, Animation
+  label,
+  input,
+  textarea {
+    display: block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.Submit {
+  //Colors, Fonts, Borders
+  font-size: 1.5rem;
+  //Display
+  //Diamensions
+  //Position
+  //Margin, Padding
+  margin-top: 1rem;
   //Transition, Animation
 }

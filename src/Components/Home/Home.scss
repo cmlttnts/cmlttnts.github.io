@@ -1,5 +1,5 @@
 @use "./HomeVars" as home;
-
+@use '../../main.scss' as main;
 .Home {
   //Colors, Fonts, Borders
   color: white;
@@ -11,6 +11,10 @@
   background-attachment: fixed;
   background-position: center;
   //Display
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   //Diamensions
   width: 100vw;
@@ -37,5 +41,56 @@
   max-height: 320px;
   //Position
   //Margin, Padding
+  margin-bottom: 1rem;
   //Transition, Animation
+}
+
+.ctaHomePri {
+  display: inline-block;
+  position: relative;
+  padding: 1rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+.ctaHomePri,
+.ctaHomePri:link,
+.ctaHomePri:hover,
+.ctaHomePri:visited {
+  background-color: main.$pri_cta_bg_col;
+  color: main.$pri_cta_txt_col;
+  font-size: 2rem;
+  // border: 2px solid main.$pri_bg_col;
+  text-decoration: none;
+}
+
+// $arrow_size: 10px;
+// .ctaHomePri::after {
+//   position: absolute;
+//   content: "";
+//   bottom: -$arrow_size;
+//   right: calc(50% - #{$arrow_size});
+
+//   width: 0;
+//   height: 0;
+//   border-left: $arrow_size solid transparent;
+//   border-right: $arrow_size solid transparent;
+
+//   border-top: $arrow_size solid main.$pri_cta_bg_col;
+// }
+
+.ctaHomeSec {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  margin-top: 4rem;
+  border-radius: 10%;
+}
+
+.ctaHomeSec,
+.ctaHomeSec:link,
+.ctaHomeSec:hover,
+.ctaHomeSec:visited {
+  background-color: main.$sec_cta_bg_col;
+  color: main.$sec_cta_txt_col;
 }

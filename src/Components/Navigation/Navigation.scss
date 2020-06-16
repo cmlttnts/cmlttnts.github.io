@@ -7,9 +7,10 @@
   //Display
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
+
+  z-index: 2;
   //Diamensions
   width: 100%;
 
@@ -51,7 +52,7 @@
 }
 
 .BurgerButton:hover + .NavMenu {
-  z-index: 2;
+  z-index: 3;
   transform: translateY(0);
   background-color: nav.$menu-bgc;
 }
