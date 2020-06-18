@@ -2,7 +2,7 @@
 
 
 
-./x_build.sh
+x_build.sh
 
 # dependencies
 /node_modules
