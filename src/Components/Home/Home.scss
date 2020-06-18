@@ -1,9 +1,8 @@
 @use "./HomeVars" as home;
-@use '../../main.scss' as main;
+@use '../../mainVars' as main;
 .Home {
   //Colors, Fonts, Borders
   color: white;
-  border: 1px solid red;
   background: home.$grad;
   background-image: linear-gradient(home.$grad, home.$grad), url("~Images/computer.jpg");
   background-repeat: no-repeat;
@@ -22,16 +21,31 @@
   //Position
   position: relative;
   //Margin, Padding
-
-  h1,
-  h2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
 
 .Header {
   margin-top: 3rem;
+  h1,
+  h2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    @include main.tablet {
+      justify-self: center;
+    }
+  }
+
+  @include main.tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .HeaderPic {
@@ -41,14 +55,19 @@
   //Display
   opacity: 0.8;
   //Diamensions
-  width: 30vw;
-  height: 40vw;
+  width: 18vh;
+  height: 24vh;
   max-width: 240px;
   max-height: 320px;
   //Position
   //Margin, Padding
   margin-bottom: 1rem;
   //Transition, Animation
+  @include main.tablet {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    justify-self: center;
+  }
 }
 
 .ctaHomePri {
@@ -70,27 +89,16 @@
   text-decoration: none;
 }
 
-// $arrow_size: 10px;
-// .ctaHomePri::after {
-//   position: absolute;
-//   content: "";
-//   bottom: -$arrow_size;
-//   right: calc(50% - #{$arrow_size});
-
-//   width: 0;
-//   height: 0;
-//   border-left: $arrow_size solid transparent;
-//   border-right: $arrow_size solid transparent;
-
-//   border-top: $arrow_size solid main.$pri_cta_bg_col;
-// }
-
 .ctaHomeSec {
   display: inline-block;
   padding: 0.5rem;
   margin: 0.5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   border-radius: 10%;
+  @include main.tablet {
+    width: 50%;
+    justify-self: center;
+  }
 }
 
 .ctaHomeSec,
@@ -99,4 +107,5 @@
 .ctaHomeSec:visited {
   background-color: main.$sec_cta_bg_col;
   color: main.$sec_cta_txt_col;
+  text-decoration: none;
 }

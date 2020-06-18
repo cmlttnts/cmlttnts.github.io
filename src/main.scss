@@ -1,7 +1,11 @@
-* {
+@use './mainVars' as main;
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid rgb(74, 250, 5);
 }
 
 html {
@@ -9,22 +13,9 @@ html {
   scroll-behavior: smooth;
 }
 
-$pri_bg_col: hsl(286, 72%, 45%);
-$pri_txt_col: white;
-$pri_cta_txt_col: white;
-$pri_cta_bg_col: rgb(50, 111, 202);
-
-$sec_cta_txt_col: rgb(211, 205, 205);
-$sec_cta_bg_col: rgb(70, 133, 228);
-
-// ANCHOR TAG
-$pri_link_col: rgb(24, 24, 231);
-$pri_link_col_active: rgb(226, 223, 223);
-$pri_link_col_visited: rgb(175, 37, 175);
-
 a {
   font-size: 1.2rem;
-  color: $pri_link_col;
+  color: main.$pri_link_col;
   cursor: pointer;
   display: inline-block;
   outline: none;
@@ -34,27 +25,20 @@ a {
 }
 
 a:link {
-  color: $pri_link_col;
+  color: main.$pri_link_col;
 }
 a:hover {
   text-decoration: underline;
 }
 a:active {
-  background-color: $pri_link_col_active;
+  background-color: main.$pri_link_col_active;
 }
 a:visited {
-  color: $pri_link_col_visited;
+  color: main.$pri_link_col_visited;
 }
 
-// BUTTON
-
-$def_btn_bgc: $pri_bg_col;
-$def_btn_bgc_hover: $pri_bg_col;
-$def_btn_pad: 4px;
-$def_btn_rad: 4px;
-
 button {
-  background-color: $def_btn_bgc;
+  background-color: main.$def_btn_bgc;
   font-size: inherit;
   cursor: pointer;
   display: inline-block;
@@ -63,13 +47,13 @@ button {
   border: none;
   text-decoration: none;
   text-align: center;
-  padding: $def_btn_pad;
-  border-radius: $def_btn_rad;
+  padding: main.$def_btn_pad;
+  border-radius: main.$def_btn_rad;
 }
 button:hover {
-  background-color: $def_btn_bgc_hover;
+  background-color: main.$def_btn_bgc_hover;
 }
 
 button:active {
-  background-color: $pri_bg_col;
+  background-color: main.$pri_bg_col;
 }
