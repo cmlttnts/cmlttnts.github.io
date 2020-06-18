@@ -14,14 +14,15 @@
   height: 100vh;
   //Position
   //Margin, Padding
-  padding-top: 5rem;
+  padding-top: 1rem;
   //Transition, Animation
   h2 {
     margin-bottom: 2rem;
+    font-size: 1.8rem;
   }
   form {
     width: 80%;
-    max-width: 400px;
+    max-width: 450px;
   }
 
   label,
@@ -32,6 +33,24 @@
     margin-bottom: 0.8rem;
     width: 100%;
   }
+  label,
+  input {
+    height: 2rem;
+    font-size: 1.4rem;
+  }
+  label {
+    position: relative;
+  }
+
+  label::after {
+    content: "*Required";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1rem;
+    color: rgb(236, 95, 217);
+  }
+
   @include main.tablet {
     padding-top: 4rem;
   }
@@ -45,5 +64,10 @@
   //Position
   //Margin, Padding
   margin-top: 1rem;
+  padding: 2rem;
   //Transition, Animation
+
+  @include main.tablet {
+    font-size: 1.7rem;
+  }
 }
