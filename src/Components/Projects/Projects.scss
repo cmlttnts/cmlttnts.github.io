@@ -11,10 +11,10 @@
   height: 100vh;
   //Position
   //Margin, Padding
+  padding-top: 2rem;
   //Transition, Animation
   h2 {
     text-align: center;
-    padding-top: 1rem;
     font-size: 1.6rem;
   }
   ul {
@@ -35,10 +35,15 @@
 
   ul > li {
     width: 80%;
+    max-width: 400px;
     display: inline-block;
     border: 1px solid rgb(151, 206, 231);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  @include main.tablet {
+    padding-top: 3rem;
   }
 }
 

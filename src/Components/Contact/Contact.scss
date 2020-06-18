@@ -1,5 +1,5 @@
 @use "./ContactVars";
-
+@use '../../mainVars' as main;
 .Contact {
   //Colors, Fonts, Borders
   color: white;
@@ -31,6 +31,9 @@
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     width: 100%;
+  }
+  @include main.tablet {
+    padding-top: 4rem;
   }
 }
 

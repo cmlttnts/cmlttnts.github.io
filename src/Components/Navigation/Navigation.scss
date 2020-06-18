@@ -1,9 +1,10 @@
 @use "./NavigationVars" as nav;
-
+@use '../../mainVars' as main;
 .Navigation {
   //Colors, Fonts, Borders
   color: #ffffff;
   font-size: 1.1rem;
+  background-color: main.$pri_bg_col;
   // border: 1px solid red;
   //Display
   display: flex;
@@ -19,12 +20,23 @@
   position: fixed;
   bottom: 0;
   //Margin, Padding
+  @include main.tablet {
+    top: 0;
+    bottom: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .Navigation a,
 .Navigation a:visited {
   color: inherit;
   font-size: 1.5rem;
+  @include main.tablet {
+    font-size: 1rem;
+  }
 }
 
 .NavMenu {
@@ -43,19 +55,37 @@
   //Margin, Padding
   //Transition, Animation
   transition: all 0.4s ease;
+  @include main.tablet {
+    width: 40%;
+    min-width: 400px;
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
-.Navigation .BurgerButton {
+.BurgerButton {
   //Colors, Fonts, Borders
-
   //Display
   //Diamensions
   //Position
   //Margin, Padding
+  @include main.tablet {
+    display: none;
+  }
 }
 
 .BurgerButton:hover + .NavMenu {
   z-index: 3;
   transform: translateY(0);
   background-color: nav.$menu-bgc;
+}
+
+.NavMenu:hover {
+  @include main.tablet {
+    z-index: 3;
+    transform: translateY(0);
+    background-color: nav.$menu-bgc;
+  }
 }
