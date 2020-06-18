@@ -20,6 +20,7 @@ const Contact = (/* { prop1, prop2 }: PropType */): JSX.Element => {
 
   return (
     <div className="Contact" id="contact">
+      <h2>Contact</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="fullname">Full Name: </label>
         <input type="text" name="fullname" id="fullname" />

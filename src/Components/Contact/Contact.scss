@@ -16,12 +16,21 @@
   //Margin, Padding
   padding-top: 5rem;
   //Transition, Animation
+  h2 {
+    margin-bottom: 2rem;
+  }
+  form {
+    width: 80%;
+    max-width: 400px;
+  }
+
   label,
   input,
   textarea {
     display: block;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
+    width: 100%;
   }
 }
 
