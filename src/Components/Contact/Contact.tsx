@@ -12,9 +12,15 @@ type PropType= {
 
 // Destructure the props
 const Contact = (/* { prop1, prop2 }: PropType */): JSX.Element => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+
+  };
+
   return (
     <div className="Contact" id="contact">
-      <form className="contact-form">
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="fullname">Full Name: </label>
         <input type="text" name="fullname" id="fullname" />
         <label htmlFor="email">Email: </label>

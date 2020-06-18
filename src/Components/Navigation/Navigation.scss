@@ -3,6 +3,7 @@
 .Navigation {
   //Colors, Fonts, Borders
   color: #ffffff;
+  font-size: 1.1rem;
   // border: 1px solid red;
   //Display
   display: flex;
@@ -20,8 +21,10 @@
   //Margin, Padding
 }
 
-.Navigation a {
+.Navigation a,
+.Navigation a:visited {
   color: inherit;
+  font-size: 1.5rem;
 }
 
 .NavMenu {

@@ -22,6 +22,12 @@
   //Position
   position: relative;
   //Margin, Padding
+
+  h1,
+  h2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 .Header {
@@ -30,7 +36,7 @@
 
 .HeaderPic {
   //Colors, Fonts, Borders
-  background-color: rgba(218, 129, 198, 0.8);
+  background-color: rgba(161, 156, 160, 0.8);
   border-radius: 50%;
   //Display
   opacity: 0.8;

@@ -11,8 +11,8 @@ const Home = (/* { prop1, prop2 }: PropType */): JSX.Element => {
     <div className="Home" id="home">
       <header className="Header">
         <img className="HeaderPic" src={picMid} alt="cemalettin taş profile" />
-        <h1>Lorem, ipsum dolor.</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, impedit?</h2>
+        <h1>I am Cemalettin.</h1>
+        <h2>I develop elegant and fast user interfaces</h2>
       </header>
       <div>
         <a className="ctaHomeSec" href="#about">About</a>
@@ -20,7 +20,7 @@ const Home = (/* { prop1, prop2 }: PropType */): JSX.Element => {
 
       </div>
       <a className="ctaHomePri" href="#projects">
-        See My Work
+        My Work
       </a>
       <Navigation items={navMain} />
     </div>
