@@ -76,6 +76,10 @@
   padding: 1rem;
   margin-top: 4rem;
   border-radius: 10px;
+  @include main.tablet {
+    margin-top: 5%;
+    padding: 2%;
+  }
 }
 
 .ctaHomePri,
@@ -96,7 +100,8 @@
   margin-top: 2rem;
   border-radius: 10px;
   @include main.tablet {
-    width: 30%;
+    width: 50%;
+    max-width: 125px;
     justify-self: center;
     border-radius: 10px;
   }
