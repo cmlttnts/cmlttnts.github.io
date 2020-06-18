@@ -2,6 +2,7 @@
 git add .
 git commit -m "$*"
 git push
+git push githubIo dev
 echo "pushed"
 yarn run build
 echo "build done"
@@ -17,6 +18,7 @@ cp -a build/. .
 git add .
 git commit -m "$*"
 git push
+git push githubIo master
 echo "master is pushed"
 git checkout dev
 echo "return to dev branch"
