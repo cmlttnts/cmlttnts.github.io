@@ -7,6 +7,12 @@ yarn run build
 echo "build done"
 git checkout master
 echo "now in master branch"
+sleep 1
+rm *.txt
+rm *.json
+rm *.js
+rm *.html
+rm -r static
 cp -a build/. .
 git add .
 git commit -m "$*"
