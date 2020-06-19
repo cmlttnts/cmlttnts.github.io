@@ -64,10 +64,11 @@
   //Position
   //Margin, Padding
   margin-top: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   //Transition, Animation
 
   @include main.tablet {
     font-size: 1.7rem;
+    border-radius: 15px;
   }
 }
