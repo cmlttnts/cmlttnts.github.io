@@ -14,7 +14,7 @@ type PropType= {
 // Destructure the props
 const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
   return (
-    <div className="About" id="about">
+    <div className="About MajorSection" id="about">
       <a className="ctaHomePri" href="cv/cemalettin_tas_cv.pdf">CV</a>
       <div className="Skills">
         <h2>

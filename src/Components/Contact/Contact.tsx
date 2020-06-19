@@ -9,7 +9,7 @@ const Contact = (): JSX.Element => {
   };
 
   return (
-    <div className="Contact" id="contact">
+    <div className="Contact MajorSection" id="contact">
       <h2>Contact</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="fullname">Full Name : </label>

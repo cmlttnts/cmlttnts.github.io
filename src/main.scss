@@ -57,3 +57,10 @@ button:hover {
 button:active {
   background-color: main.$pri_bg_col;
 }
+
+.MajorSection {
+  border: 1px solid grey;
+  //Diamensions
+  width: 100vw;
+  min-height: 100vh;
+}

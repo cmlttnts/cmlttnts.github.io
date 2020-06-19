@@ -6,7 +6,7 @@ import React from 'react';
 
 const Home = (): JSX.Element => {
   return (
-    <div className="Home" id="home">
+    <div className="Home MajorSection" id="home">
       <header className="Header">
         <div className="HeaderSec">
           <h1>I am Cemalettin.</h1>

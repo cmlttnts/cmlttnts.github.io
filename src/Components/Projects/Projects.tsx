@@ -5,7 +5,7 @@ import React from 'react';
 // Destructure the props
 const Projects = (): JSX.Element => {
   return (
-    <div className="Projects" id="projects">
+    <div className="Projects MajorSection" id="projects">
       <h2>My Projects</h2>
       <ul>
         <li>
