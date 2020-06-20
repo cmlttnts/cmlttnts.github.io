@@ -13,7 +13,6 @@ const Home = (): JSX.Element => {
           <h2>I develop elegant and fast user interfaces</h2>
           <a className="ctaHomeSec" href="#about">About</a>
           <a className="ctaHomeSec" href="#contact">Contact</a>
-
         </div>
       </header>
       <a className="ctaHomePri" href="#projects">

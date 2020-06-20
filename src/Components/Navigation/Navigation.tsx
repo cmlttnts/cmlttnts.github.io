@@ -15,7 +15,6 @@ const Navigation = ({ items }: NavProps): JSX.Element => {
     <div className="Navigation">
       <BurgerButton />
       <div className="NavMenu">
-
         {items.map(
           (item) => <a href={item.to} key={item.text}>{item.text}</a>,
         )}
