@@ -53,12 +53,15 @@
     border-radius: 5px;
     margin-right: 1rem;
     @include main.tablet {
+      margin-top: 1rem;
       width: 50%;
       max-width: 125px;
     }
   }
-
-  @include main.tablet {
+  .ctaHomeSec:hover {
+    @include main.tablet {
+      background-color: rgb(57, 199, 235);
+    }
   }
 }
 
@@ -80,6 +83,12 @@
   background-color: main.$pri_cta_bg_col;
   color: main.$pri_cta_txt_col;
   text-decoration: none;
+}
+
+.ctaHomePri:hover {
+  @include main.tablet {
+    background-color: rgb(57, 199, 235);
+  }
 }
 
 .ctaHomeSec {
