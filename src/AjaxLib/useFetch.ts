@@ -70,11 +70,11 @@ function useFetch<T>(initUrl: string, initialData: T, isActiveAtStart: boolean,
 
   useEffect(() => {
     //if not active don't even try
-    if (!active) {
-      dispatch({ type: 'FETCH_NOT_ACTIVE_AT_MOUNT' });
-      return (): void => { };
-    }
     let isCanceled = false;
+    if (!active && !isCanceled) {
+      dispatch({ type: 'FETCH_NOT_ACTIVE_AT_MOUNT' });
+      return (): void => { isCanceled = true; };
+    }
 
     const fetchData = async (): Promise<void> => {
       dispatch({ type: 'FETCH_INIT' });
