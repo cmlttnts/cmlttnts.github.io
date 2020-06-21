@@ -1,6 +1,7 @@
 import './Projects.scss';
 
 import React from 'react';
+import ProjectLink from 'Components/ProjectLink/ProjectLink';
 
 // Destructure the props
 const Projects = (): JSX.Element => {
@@ -9,14 +10,18 @@ const Projects = (): JSX.Element => {
       <h2>My Projects</h2>
       <ul>
         <li>
-          <a href="https://cmlttnts.github.io/BeverageTracker/">BeverageTracker</a>
-          {' '}
-          <span data-after="App for office place, keep track of the beverages with timestamps!" className="InfoCircle"><i className="fas fa-question-circle"></i></span>
+          <ProjectLink
+            name="Beverage Tracker"
+            url="https://cmlttnts.github.io/BeverageTracker/"
+            tooltip="App for office place, keep track of the beverages with timestamps!"
+          />
         </li>
         <li>
-          <a href="https://cmlttnts.github.io/Carousel/">Carousel</a>
-          {' '}
-          <span data-after="App for image sliding" className="InfoCircle"><i className="fas fa-question-circle"></i></span>
+          <ProjectLink
+            name="Carousel"
+            url="https://cmlttnts.github.io/Carousel/"
+            tooltip="App for image sliding with different styles"
+          />
         </li>
         <li> Coming Soon ...</li>
       </ul>

@@ -44,37 +44,3 @@
     padding-top: 3rem;
   }
 }
-
-.InfoCircle {
-  //Colors, Fonts, Borders
-  font-size: 1.2rem;
-  background-color: main.$pri_cta_bg_col;
-  border-radius: 50%;
-  //Display
-  //Diamensions
-  //Position
-  position: relative;
-  //Margin, Padding
-  //Transition, Animation
-}
-
-.InfoCircle:hover::after {
-  //Colors, Fonts, Borders
-  background-color: rgb(112, 165, 226);
-  box-shadow: 2px 2px 2px black;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  //Display
-  content: attr(data-after);
-  text-align: center;
-  z-index: 2;
-  //Diamensions
-  width: 200px;
-  //Position
-  position: absolute;
-  right: 50%;
-  top: 100%;
-  //Margin, Padding
-  padding: 0.8rem 0.4rem;
-  //Transition, Animation
-}

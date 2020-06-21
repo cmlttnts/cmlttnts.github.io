@@ -34,9 +34,25 @@ const Contact = (): JSX.Element => {
   let ButtonOrReplacement;
 
   if (state.isActive && state.isLoading) {
-    ButtonOrReplacement = <div>LOADING</div>;
+    ButtonOrReplacement = <div className="fas-cont"><i className="fas fa-spinner"></i></div>;
   } else if (state.isActive && state.isError) {
-    ButtonOrReplacement = <div>ERROR HAPPENED</div>;
+    ButtonOrReplacement = (
+      <div className="fas-cont">
+        <i className="fas fa-times"></i>
+        <p>Something wrong happened, try again!</p>
+      </div>
+    );
+  } else if (state.isActive && !state.isLoading && !state.isError) {
+    //this means it is success, give a succes indicator, setTimeout to remove
+    ButtonOrReplacement = (
+      <div className="fas-cont">
+        <i className="fas fa-check"></i>
+        <p>Successfuly sent!</p>
+      </div>
+    );
+    setTimeout(() => {
+      setActive(false);
+    }, 10000);
   } else {
     ButtonOrReplacement = <button className="ctaHomePri Submit" type="submit">Send</button>;
   }
