@@ -1,7 +1,7 @@
 import './Contact.scss';
 
 import React from 'react';
-import useFetch from 'AjaxLib/useFetch';
+import useFetch from 'AjaxLib/useFetch/useFetch';
 
 const INIT_OPTIONS = {
   method: 'post',
@@ -31,6 +31,12 @@ const Contact = (): JSX.Element => {
 
   };
 
+  const restartButton = (delayMs = 10000): void => {
+    setTimeout(() => {
+      setActive(false);
+    }, delayMs);
+  };
+
   let ButtonOrReplacement;
 
   if (state.isActive && state.isLoading) {
@@ -42,6 +48,7 @@ const Contact = (): JSX.Element => {
         <p>Something wrong happened, try again!</p>
       </div>
     );
+    restartButton();
   } else if (state.isActive && !state.isLoading && !state.isError) {
     //this means it is success, give a succes indicator, setTimeout to remove
     ButtonOrReplacement = (
@@ -50,9 +57,7 @@ const Contact = (): JSX.Element => {
         <p>Successfuly sent!</p>
       </div>
     );
-    setTimeout(() => {
-      setActive(false);
-    }, 10000);
+    restartButton();
   } else {
     ButtonOrReplacement = <button className="ctaHomePri Submit" type="submit">Send</button>;
   }
