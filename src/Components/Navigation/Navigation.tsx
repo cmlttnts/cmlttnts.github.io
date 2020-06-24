@@ -8,7 +8,6 @@ import BurgerButton from 'Components/BurgerButton/BurgerButton';
 type NavProps= {
   items: NavItemsType;
 };
-
 // Destructure the props
 const Navigation = ({ items }: NavProps): JSX.Element => {
   return (

@@ -18,6 +18,13 @@ const Projects = (): JSX.Element => {
         </li>
         <li>
           <ProjectLink
+            name="2048 Game"
+            url="https://cmlttnts.github.io/game-2048/"
+            tooltip="A clone of famous mobile game 2048 in javascript and html5 canvas"
+          />
+        </li>
+        <li>
+          <ProjectLink
             name="Carousel"
             url="https://cmlttnts.github.io/Carousel/"
             tooltip="App for image sliding with different styles"
