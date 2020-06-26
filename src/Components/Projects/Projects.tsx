@@ -30,6 +30,13 @@ const Projects = (): JSX.Element => {
             tooltip="App for image sliding with different styles"
           />
         </li>
+        <li>
+          <ProjectLink
+            name="Login and Sign Up"
+            url="https://cmlttnts.github.io/login-signup/"
+            tooltip="Not finished yet!, login and sign up page with progress steps"
+          />
+        </li>
         <li> Coming Soon ...</li>
       </ul>
     </div>
