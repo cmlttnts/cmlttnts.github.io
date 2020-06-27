@@ -32,9 +32,9 @@ const Projects = (): JSX.Element => {
         </li>
         <li>
           <ProjectLink
-            name="Login and Sign Up"
+            name="Login-Sign Up"
             url="https://cmlttnts.github.io/login-signup/"
-            tooltip="Not finished yet!, login and sign up page with progress steps"
+            tooltip="Under Construction... Login and sign up page with progress steps"
           />
         </li>
         <li> Coming Soon ...</li>
