@@ -22,6 +22,10 @@ const navMain: NavItemsType = [
     text: 'Projects',
     to: '#projects',
   },
+  {
+    text: 'Blog',
+    to: '#blog',
+  },
 ];
 
 export default navMain;

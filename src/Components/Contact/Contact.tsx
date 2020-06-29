@@ -16,7 +16,8 @@ const URL = 'https://formspree.io/mvowqwww';
 
 const Contact = (): JSX.Element => {
 
-  const [state, setUrl, setActive, setOptions] = useFetch(URL, {}, false, INIT_OPTIONS);
+  //we will not change url in this case, so no need to return
+  const [state,, setActive, setOptions] = useFetch(URL, {}, false, INIT_OPTIONS);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();

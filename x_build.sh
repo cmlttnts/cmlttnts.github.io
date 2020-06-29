@@ -3,22 +3,23 @@ git add .
 git commit -m "$*"
 git push
 git push githubIo dev
-echo "pushed"
+echo "**********************************pushed"
 yarn run build
-echo "build done"
+echo "**********************************build done"
 git checkout master
-echo "now in master branch"
+echo "**********************************now in master branch"
 sleep 1
 rm *.txt
 rm *.json
 rm *.js
 rm *.html
 rm -r static
+echo "**********************************removed old files"
 cp -a build/. .
 git add .
 git commit -m "$*"
 git push
 git push githubIo master
-echo "master is pushed"
+echo "**********************************master is pushed"
 git checkout dev
-echo "return to dev branch"
+echo "**********************************return to dev branch"
