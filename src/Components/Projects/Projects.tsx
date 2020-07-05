@@ -37,6 +37,13 @@ const Projects = (): JSX.Element => {
             tooltip="Login and sign up page with progress steps"
           />
         </li>
+        <li>
+          <ProjectLink
+            name="Infinite Scroll"
+            url="https://cmlttnts.github.io/infinite-scrolling/"
+            tooltip="When you scroll to bottom, you load more image"
+          />
+        </li>
         <li> Coming Soon ...</li>
       </ul>
     </div>
