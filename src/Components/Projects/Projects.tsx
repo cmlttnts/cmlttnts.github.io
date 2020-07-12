@@ -44,6 +44,13 @@ const Projects = (): JSX.Element => {
             tooltip="When you scroll to bottom, you load more image"
           />
         </li>
+        <li>
+          <ProjectLink
+            name="Roommate Finder"
+            url="https://cmlttnts.github.io/room-mate-finder/"
+            tooltip="In Construction... Find a roommate online, seach cities, filter according to your needs"
+          />
+        </li>
         <li> Coming Soon ...</li>
       </ul>
     </div>

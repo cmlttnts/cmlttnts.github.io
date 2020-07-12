@@ -18,7 +18,7 @@ const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
       <a className="ctaHomePri" href="cv/cemalettin_tas_cv.pdf">CV</a>
       <div className="Skills">
         <h2>
-          <i className="fas fa-cogs"></i>
+          <i className="fas fa-cogs iconFas"></i>
           Skills
         </h2>
         <ul className="SkillsFED">
@@ -39,7 +39,7 @@ const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
       </div>
       <div className="Experience">
         <h2>
-          <i className="fas fa-briefcase"></i>
+          <i className="fas fa-briefcase iconFas"></i>
           Experience
         </h2>
 
@@ -58,7 +58,7 @@ const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
 
       <div className="Education">
         <h2>
-          <i className="fas fa-graduation-cap"></i>
+          <i className="fas fa-graduation-cap iconFas"></i>
           Education
         </h2>
         <table>

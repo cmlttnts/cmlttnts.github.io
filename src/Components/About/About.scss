@@ -18,8 +18,8 @@
   //Margin, Padding
   padding-top: 0.6rem;
   & > div {
-    margin-bottom: 0.1rem;
-    margin-top: 0.1rem;
+    margin-bottom: 1.2rem;
+    margin-top: 0.2rem;
   }
   table {
     width: 90%;
@@ -35,6 +35,9 @@
   }
   h2 {
     margin-bottom: 0.4rem;
+    .iconFas {
+      margin-right: 0.5rem;
+    }
   }
 
   h3 {
@@ -44,10 +47,6 @@
   li {
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-  }
-
-  .fas {
-    margin-right: 0.6rem;
   }
 
   .ctaHomePri {
