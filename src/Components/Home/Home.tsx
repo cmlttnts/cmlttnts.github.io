@@ -14,6 +14,23 @@ const Home = (): JSX.Element => {
           <a className="ctaHomeSec" href="#about">About</a>
           <a className="ctaHomeSec" href="#contact">Contact</a>
         </div>
+        <div className="SocialLinks">
+          <a
+            href="https://www.linkedin.com/in/cemalettintas/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/cmlttnts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github"></i>
+
+          </a>
+        </div>
       </header>
       <a className="ctaHomePri" href="#projects">
         My Work

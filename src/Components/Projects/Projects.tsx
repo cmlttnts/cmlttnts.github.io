@@ -48,7 +48,7 @@ const Projects = (): JSX.Element => {
           <ProjectLink
             name="Roommate Finder"
             url="https://cmlttnts.github.io/room-mate-finder/"
-            tooltip="In Construction... Find a roommate online, seach cities, filter according to your needs"
+            tooltip="Under Construction... Find a roommate online, seach cities, filter according to your needs"
           />
         </li>
         <li> Coming Soon ...</li>
