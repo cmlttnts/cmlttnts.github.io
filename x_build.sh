@@ -2,7 +2,7 @@
 git add .
 git commit -m "$*"
 git push
-git push githubIo dev
+git push -f githubIo dev
 echo "**********************************pushed"
 yarn run build
 echo "**********************************build done"
