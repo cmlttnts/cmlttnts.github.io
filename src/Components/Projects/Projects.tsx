@@ -1,7 +1,7 @@
-import './Projects.scss';
+import "./Projects.scss";
 
-import React from 'react';
-import ProjectLink from 'Components/ProjectLink/ProjectLink';
+import ProjectLink from "Components/ProjectLink/ProjectLink";
+import React from "react";
 
 // Destructure the props
 const Projects = (): JSX.Element => {
@@ -9,6 +9,13 @@ const Projects = (): JSX.Element => {
     <div className="Projects MajorSection" id="projects">
       <h2>My Projects</h2>
       <ul>
+        <li>
+          <ProjectLink
+            name="Advanced React Components"
+            url="https://cmlttnts.github.io/advanced-componentst/"
+            tooltip="Me trying to write reusable complex react components!"
+          />
+        </li>
         <li>
           <ProjectLink
             name="Beverage Tracker"
@@ -24,18 +31,10 @@ const Projects = (): JSX.Element => {
           />
         </li>
         <li>
-          <ProjectLink
-            name="Carousel"
-            url="https://cmlttnts.github.io/Carousel/"
-            tooltip="App for image sliding with different styles"
-          />
+          <ProjectLink name="Carousel" url="https://cmlttnts.github.io/Carousel/" tooltip="App for image sliding with different styles" />
         </li>
         <li>
-          <ProjectLink
-            name="Login-Sign Up"
-            url="https://cmlttnts.github.io/login-signup/"
-            tooltip="Login and sign up page with progress steps"
-          />
+          <ProjectLink name="Login-Sign Up" url="https://cmlttnts.github.io/login-signup/" tooltip="Login and sign up page with progress steps" />
         </li>
         <li>
           <ProjectLink
