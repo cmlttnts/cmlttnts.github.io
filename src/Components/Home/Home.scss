@@ -52,9 +52,21 @@
     a {
       font-size: 2.5rem;
       color: white;
+      position: relative;
     }
-    a:first-child {
+    a:not(:last-child) {
       margin-right: 1rem;
+    }
+    span {
+      display: none;
+      position: absolute;
+      font-size: 1rem;
+    }
+
+    a:hover span {
+      bottom: -40px;
+      left: 0px;
+      display: inline;
     }
   }
   .ctaHomeSec {
