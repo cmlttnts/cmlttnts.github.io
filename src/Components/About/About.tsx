@@ -1,7 +1,7 @@
-import './About.scss';
-// import cemo_small from 'Images/cemo_transparent_small.png';
+import "./About.scss";
 
-import React from 'react';
+// import cemo_small from 'Images/cemo_transparent_small.png';
+import React from "react";
 // Define props type
 
 /*
@@ -15,7 +15,8 @@ type PropType= {
 const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
   return (
     <div className="About MajorSection" id="about">
-      <a className="ctaHomePri" href="cv/cemalettin_tas_cv.pdf">CV</a>
+      <p>In progress of updating</p>
+      {/* <a className="ctaHomePri" href="cv/cemalettin_tas_cv.pdf">CV</a>
       <div className="Skills">
         <h2>
           <i className="fas fa-cogs iconFas"></i>
@@ -77,8 +78,7 @@ const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
             </tr>
           </tbody>
         </table>
-      </div>
-
+      </div> */}
     </div>
   );
 };
