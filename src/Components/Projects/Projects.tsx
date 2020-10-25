@@ -12,7 +12,7 @@ const Projects = (): JSX.Element => {
         <li>
           <ProjectLink
             name="Advanced React Components"
-            url="https://cmlttnts.github.io/advanced-components/"
+            url="https://cmlttnts.github.io/advanced-components-and-hooks/"
             tooltip="Me trying to write reusable complex react components!"
           />
         </li>
