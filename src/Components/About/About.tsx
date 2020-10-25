@@ -1,6 +1,7 @@
+import "./About.scss";
+
 // import cemo_small from 'Images/cemo_transparent_small.png';
 import React from "react";
-import "./About.scss";
 
 // Define props type
 
@@ -15,10 +16,12 @@ type PropType= {
 const About = (/* { prop1, prop2 }: PropType */): JSX.Element => {
   return (
     <div className="About MajorSection" id="about">
-      <p>In progress of updating</p>
+      <br />
       <a className="ctaHomePri" href="cv/cemalettin_tas_cv.pdf">
         CV
       </a>
+      <br />
+      <p>In progress of updating</p>
       {/*
       <div className="Skills">
         <h2>
